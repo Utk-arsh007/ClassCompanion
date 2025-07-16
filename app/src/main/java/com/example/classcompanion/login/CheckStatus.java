@@ -58,6 +58,7 @@ public class CheckStatus extends AppCompatActivity {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY,9);
         calendar.set(Calendar.MINUTE,0);
+        //hey
         calendar.set(Calendar.SECOND,0);
 
         long scheduleTime = calendar.getTimeInMillis();
