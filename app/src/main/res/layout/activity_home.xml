@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="30dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="My Toolbar" />
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center">
+
+       <GridLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:columnCount="2">
+
+           <LinearLayout
+               android:id="@+id/llTimetable"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:padding="10dp"
+               android:orientation="vertical">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   app:lottie_rawRes="@raw/timetable"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="TimeTable" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/llAssignment"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:padding="10dp"
+               android:orientation="vertical">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   app:lottie_rawRes="@raw/assignment"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="Assigment" />
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/llAttendance"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:padding="10dp"
+               android:orientation="vertical">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   app:lottie_rawRes="@raw/attendance"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="Attendance" />
+
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:id="@+id/llNotes"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="10dp"
+               android:gravity="center">
+
+               <com.airbnb.lottie.LottieAnimationView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   app:lottie_rawRes="@raw/notes"
+                   app:lottie_autoPlay="true"
+                   app:lottie_loop="true"/>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="Notes"/>
+           </LinearLayout>
+
+
+
+
+       </GridLayout>
+
+
+   </LinearLayout>
+
+</LinearLayout>

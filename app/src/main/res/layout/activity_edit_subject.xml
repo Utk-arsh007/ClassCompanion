@@ -1,0 +1,51 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Class"
+        android:textSize="22sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/edtSubject_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edtTime_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textSize="20sp"
+        android:hint="Select Time:"
+        android:focusable="false"
+        android:clickable="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOTE: Enter time in 24 hours format."
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
+
+

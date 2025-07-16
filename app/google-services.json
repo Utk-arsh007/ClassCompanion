@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1090999446294",
+    "project_id": "classcompanion-2f0f3",
+    "storage_bucket": "classcompanion-2f0f3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090999446294:android:47d0e9518d8045bb07fe37",
+        "android_client_info": {
+          "package_name": "com.example.classcompanion"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdCo0lNV6NBxOJ9hqQGUtoxU8dBtvo3JE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

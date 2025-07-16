@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="60dp"
+       android:elevation="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardUseCompatPadding="true">
+
+       <LinearLayout
+           android:id="@+id/llDay"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
+
+           <TextView
+               android:id="@+id/tvDayTitle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Monday"
+               android:layout_marginStart="20dp"
+               android:textSize="15sp"
+               android:textStyle="bold"
+               android:background="@color/white"
+               android:textColor="#000000" />
+
+           <Button
+               android:id="@+id/btnAddSubject"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="150dp"
+               />
+
+
+       </LinearLayout>
+
+       <!-- Expandable Class List -->
+       <LinearLayout
+           android:id="@+id/llClassList"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:visibility="gone"
+           android:background="@color/white" />
+
+   </androidx.cardview.widget.CardView>
+</LinearLayout>
