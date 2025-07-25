@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class Home extends AppCompatActivity {
 
-    LinearLayout llTimetable,llAttendance;
+    LinearLayout llTimetable,llAttendance,llAssignment,llNotes;
     Toolbar toolbar;
     FirebaseAuth auth;
 
@@ -32,6 +32,8 @@ public class Home extends AppCompatActivity {
 
         llTimetable = findViewById(R.id.llTimetable);
         llAttendance = findViewById(R.id.llAttendance);
+        llAssignment = findViewById(R.id.llAssignment);
+        llNotes = findViewById(R.id.llNotes);
         toolbar = findViewById(R.id.toolbar);
         auth = FirebaseAuth.getInstance();
 
@@ -48,6 +50,20 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Home.this,Attendance.class));
+            }
+        });
+
+        llAssignment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, Assignment.class));
+            }
+        });
+
+        llNotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home.this, Notes.class));
             }
         });
 
@@ -78,7 +94,7 @@ public class Home extends AppCompatActivity {
                             dialog.dismiss();
                         }
                     })
-                    .show(); // ✅ Only here
+                    .show();
 
             return true;
         }

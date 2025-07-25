@@ -38,6 +38,8 @@ dependencies {
     implementation("com.airbnb.android:lottie:6.6.6")
     implementation ("androidx.work:work-runtime:2.9.0")
     implementation ("com.google.guava:guava:31.1-android")
+    implementation ("com.google.firebase:firebase-firestore:24.10.1")
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
